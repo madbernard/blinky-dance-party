@@ -1,4 +1,4 @@
-// a dancer that changes color each step
+// a dancer that changes color each step and pulses into a squarish shape
 
 var RainbowDancer = function(top, left, timeBetweenSteps) {
   this.colorList = ['aqua', 'lime', 'fuchsia'];
