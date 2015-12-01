@@ -16,13 +16,16 @@ $(document).ready(function(){
      * to the stage.
      */
     var dancerMakerFunctionName = $(this).data("dancer-maker-function-name");
+    //<a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>    </div>
+    //dancerMakerFunctionName = 'BlinkyDancer'
 
     // get the maker function for the kind of dancer we're supposed to make
+    // dancerMakerFunction = window.BlinkyDancer (the function)
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
-
-    var dancer = dancerMakerFunction(
+    //var dancer = BlinkyDancer(x,y,timeout)
+    var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
       Math.random() * 1000
