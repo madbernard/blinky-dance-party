@@ -33,6 +33,10 @@ $(document).ready(function(){
 
     dancer.step();
 
+    $('.shifty').mouseover(function() {
+        $(this).animate({top: Math.random() * 1000, left: Math.random() * 1000}, 500);
+    });
+
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
