@@ -1,11 +1,11 @@
 // a dancer that changes color each step and pulses into a squarish shape
 
 var RainbowDancer = function(top, left, timeBetweenSteps) {
+  Dancer.call(this, top, left, timeBetweenSteps);
   this.colorList = ['aqua', 'lime', 'fuchsia'];
   this.currentColorIndex = 0; //possibly change to random
   this.expanding = true;
   this.maxSize = 10 + Math.random() * 30;
-  Dancer.call(this, top, left, timeBetweenSteps);
   //this.timeBetweenSteps is some other random number
 };
 
